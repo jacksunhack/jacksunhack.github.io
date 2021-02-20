@@ -17,21 +17,21 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"jacksunhack.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="走过的路是一阵魔术 把所有的好的坏的变成我的">
 <meta property="og:type" content="website">
-<meta property="og:title" content="奇里部落格">
-<meta property="og:url" content="http://example.com/archives/index.html">
-<meta property="og:site_name" content="奇里部落格">
+<meta property="og:title" content="奇里部落阁">
+<meta property="og:url" content="https://jacksunhack.github.io/archives/index.html">
+<meta property="og:site_name" content="奇里部落阁">
 <meta property="og:description" content="走过的路是一阵魔术 把所有的好的坏的变成我的">
 <meta property="og:locale">
 <meta property="article:author" content="Jacksunhack">
 <meta property="article:tag" content="奇里部落格, qili, qiliblog">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="https://jacksunhack.github.io/archives/">
 
 
 <script id="page-configurations">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>归档 | 奇里部落格</title>
+  <title>归档 | 奇里部落阁</title>
   
 
 
@@ -75,10 +75,18 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/rss2.xml" title="奇里部落格" type="application/rss+xml">
+<link rel="alternate" href="/rss2.xml" title="奇里部落阁" type="application/rss+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
+  <!--浏览器搞笑标题-->
+<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+<!-- 数字雨 -->
+  <canvas id="canvas" width="1440" height="900" ></canvas>
+  <script type="text/javascript" src="/js/DigitalRain.js"></script>
   <div class="container use-motion">
     <div class="headband"></div>
 
@@ -96,7 +104,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">奇里部落格</h1>
+      <h1 class="site-title">奇里部落阁</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
       <p class="site-subtitle" itemprop="description">Chiriri Blog</p>
@@ -135,7 +143,7 @@
   </li>
         <li class="menu-item menu-item-sitemap">
 
-    <a href="/rss2.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+    <a href="/atom.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
 
   </li>
   </ul>
@@ -152,6 +160,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
     <main class="main">
@@ -296,22 +305,22 @@
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/jacksunhack" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jacksunhack" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/jacksunhack" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jacksunhack" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:jacksunhack@gmail.com" title="E-Mail → mailto:jacksunhack@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="mailto:jacksunhack@gmail.com" title="E-Mail → mailto:jacksunhack@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://twitter.com/qiliblog" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;qiliblog" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+        <a href="https://twitter.com/qiliblog" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;qiliblog" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://www.facebook.com/jacksunhack" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;jacksunhack" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+        <a href="https://www.facebook.com/jacksunhack" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;jacksunhack" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://www.youtube.com/channel/UC8Pd8ZNFpcbAmRG1kkGFB-g" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC8Pd8ZNFpcbAmRG1kkGFB-g" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+        <a href="https://www.youtube.com/channel/UC8Pd8ZNFpcbAmRG1kkGFB-g" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UC8Pd8ZNFpcbAmRG1kkGFB-g" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://instagram.com/jacksunhack" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;jacksunhack" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+        <a href="https://instagram.com/jacksunhack" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;jacksunhack" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
@@ -363,7 +372,7 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -376,6 +385,8 @@
 
 
 <script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
 
   <script>
 var pjax = new Pjax({
@@ -461,5 +472,5 @@ window.addEventListener('pjax:success', () => {
   
 
     </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-shizuku"},"display":{"position":"right","width":300,"height":600},"mobile":{"show":true},"rect":"opacity:0.7","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
